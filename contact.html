@@ -1,1 +1,325 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact | SAMIKSHA SINGH</title><link rel="stylesheet" href="style.css"></head><body><header class="wrap"><a class="brand" href="index.html">SAMIKSHA SINGH</a><nav><a href="index.html">Home</a><a href="terms.html">Terms</a></nav></header><main class="wrap document"><h1>Contact us</h1><p>For questions about our platform, accounts, tasks or payments, contact us using the details below.</p><p><strong>Business name:</strong> SAMIKSHA SINGH</p><p><strong>Support email:</strong> [WORKING SUPPORT EMAIL]</p><p><strong>Phone:</strong> [WORKING SUPPORT PHONE, IF USED]</p><p><strong>Business address:</strong> [REAL BUSINESS ADDRESS]</p><p><strong>Support hours:</strong> [ACTUAL SUPPORT HOURS]</p></main><footer class="wrap"><span>© SAMIKSHA SINGH</span><span><a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds</a></span></footer></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Samiksha Store for orders, product queries and customer support.">
+  <title>Contact Us | Samiksha Store</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f4ee;
+      color: #171717;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      background: #171717;
+      color: white;
+      padding: 20px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      margin-left: 22px;
+      font-size: 13px;
+      color: #eee;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 75px 20px;
+      background: #e9e2d6;
+    }
+
+    .hero small {
+      letter-spacing: 4px;
+      font-size: 11px;
+      color: #777;
+    }
+
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(38px, 7vw, 62px);
+      font-weight: normal;
+      margin: 15px 0;
+    }
+
+    .hero p {
+      color: #666;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 65px auto;
+      padding: 0 22px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-bottom: 55px;
+    }
+
+    .contact-card {
+      background: white;
+      padding: 30px 22px;
+      border: 1px solid #e8e2d9;
+      border-radius: 5px;
+    }
+
+    .contact-card .symbol {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .contact-card h3 {
+      font-family: Georgia, serif;
+      font-size: 21px;
+      margin-bottom: 8px;
+    }
+
+    .contact-card p {
+      color: #777;
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-card a {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 13px;
+      font-weight: bold;
+      border-bottom: 1px solid #171717;
+    }
+
+    .form-section {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 55px;
+      background: white;
+      padding: 45px;
+      border: 1px solid #e8e2d9;
+    }
+
+    .form-info h2 {
+      font-family: Georgia, serif;
+      font-size: 38px;
+      font-weight: normal;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .form-info p {
+      color: #777;
+      font-size: 14px;
+    }
+
+    form label {
+      display: block;
+      font-size: 12px;
+      margin: 14px 0 6px;
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #ddd;
+      background: #faf9f6;
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #171717;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      margin-top: 18px;
+      padding: 15px 28px;
+      border: none;
+      background: #171717;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      letter-spacing: 1px;
+    }
+
+    button:hover {
+      background: #4b4035;
+    }
+
+    .note {
+      font-size: 12px;
+      color: #888;
+      margin-top: 12px;
+    }
+
+    footer {
+      background: #171717;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    footer p {
+      color: #aaa;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    @media(max-width: 700px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 11px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-section {
+        grid-template-columns: 1fr;
+        padding: 25px;
+        gap: 25px;
+      }
+
+      .container {
+        margin: 35px auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="logo">SAMIKSHA STORE</a>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <small>WE ARE HERE FOR YOU</small>
+  <h1>Get in Touch</h1>
+  <p>Have a question about your order, our collection or anything else? We'd love to hear from you.</p>
+</section>
+
+<main class="container">
+
+  <section class="contact-grid">
+
+    <div class="contact-card">
+      <div class="symbol">☎</div>
+      <h3>Call Us</h3>
+      <p>Speak with our customer support team.</p>
+      <a href="tel:+919000000000">+91 90000 00000</a>
+    </div>
+
+    <div class="contact-card">
+      <div class="symbol">✉</div>
+      <h3>Email Us</h3>
+      <p>Send us your questions anytime.</p>
+      <a href="mailto:support@samikshastore.example">support@samikshastore.example</a>
+    </div>
+
+    <div class="contact-card">
+      <div class="symbol">⌖</div>
+      <h3>Our Location</h3>
+      <p>Samiksha Store, Jabalpur, Madhya Pradesh, India.</p>
+    </div>
+
+  </section>
+
+  <section class="form-section">
+
+    <div class="form-info">
+      <h2>Let's Talk<br>About It.</h2>
+      <p>
+        Your experience matters to us. Send us a message
+        and our team will get back to you as soon as possible.
+      </p>
+    </div>
+
+    <div>
+      <form id="contactForm">
+        <label for="name">YOUR NAME</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+
+        <label for="email">EMAIL ADDRESS</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+
+        <label for="subject">SUBJECT</label>
+        <select id="subject" required>
+          <option value="">Select a subject</option>
+          <option>Order Related</option>
+          <option>Product Enquiry</option>
+          <option>Return or Refund</option>
+          <option>Other</option>
+        </select>
+
+        <label for="message">YOUR MESSAGE</label>
+        <textarea id="message" placeholder="How can we help you?" required></textarea>
+
+        <button type="submit">SEND MESSAGE →</button>
+        <p class="note">Demo form: messages are not stored or sent until a backend is connected.</p>
+      </form>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <div class="logo">SAMIKSHA STORE</div>
+  <p>Style is a way to say who you are.</p>
+  <p>© 2026 Samiksha Store. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Thank you for contacting Samiksha Store! This is a demo form and is not connected yet.");
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
